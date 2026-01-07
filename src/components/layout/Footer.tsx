@@ -28,7 +28,7 @@ export function Footer() {
                 <span className="text-accent-foreground font-display font-bold text-xl">W</span>
               </div>
               <div>
-                <span className="font-display font-bold text-xl">WELDPRO</span>
+                <span className="font-display font-bold text-xl">SumTech Engineering</span>
                 <span className="block text-xs text-white/60 -mt-1">Industrial Solutions</span>
               </div>
             </Link>
@@ -93,8 +93,8 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-accent flex-shrink-0" />
-                <a href="mailto:info@weldpro.com" className="text-white/70 hover:text-accent transition-colors text-sm">
-                  info@weldpro.com
+                <a href="mailto:info@SumTech Engineering.com" className="text-white/70 hover:text-accent transition-colors text-sm">
+                  info@SumTech Engineering.com
                 </a>
               </li>
             </ul>
@@ -104,7 +104,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-white/50 text-sm">
-            © {new Date().getFullYear()} WeldPro Industrial Solutions. All rights reserved.
+            © {new Date().getFullYear()} SumTech Engineering Industrial Solutions. All rights reserved.
           </p>
           <div className="flex gap-6">
             <a href="#" className="text-white/50 hover:text-white text-sm transition-colors">Privacy Policy</a>

@@ -26,7 +26,7 @@ export function Header() {
               <span className="text-accent-foreground font-display font-bold text-xl">W</span>
             </div>
             <div className="hidden sm:block">
-              <span className="font-display font-bold text-xl text-foreground">WELDPRO</span>
+              <span className="font-display font-bold text-xl text-foreground">SumTech Engineering</span>
               <span className="block text-xs text-muted-foreground -mt-1">Industrial Solutions</span>
             </div>
           </Link>

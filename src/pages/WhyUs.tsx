@@ -67,14 +67,14 @@ const WhyUs = () => {
         <div className="container-wide">
           <div className="max-w-4xl">
             <span className="text-accent font-semibold text-sm uppercase tracking-wider mb-4 block">
-              Why Choose WeldPro
+              Why Choose SumTech Engineering
             </span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold mb-6">
               Your Partner in{" "}
               <span className="text-accent">Welding Excellence</span>
             </h1>
             <p className="text-white/70 text-lg sm:text-xl leading-relaxed">
-              Discover why leading industries worldwide trust WeldPro for their critical 
+              Discover why leading industries worldwide trust SumTech Engineering for their critical 
               welding applications. Our commitment to quality and service sets us apart.
             </p>
           </div>
@@ -174,10 +174,10 @@ const WhyUs = () => {
       <section className="section-dark section-padding">
         <div className="container-wide text-center">
           <h2 className="text-3xl sm:text-4xl font-display font-bold mb-6">
-            Ready to Experience the WeldPro Difference?
+            Ready to Experience the SumTech Engineering Difference?
           </h2>
           <p className="text-white/70 text-lg mb-8 max-w-2xl mx-auto">
-            Join thousands of satisfied customers who trust WeldPro for their welding needs. 
+            Join thousands of satisfied customers who trust SumTech Engineering for their welding needs. 
             Let's discuss how we can support your success.
           </p>
           <Button asChild size="lg" className="btn-accent">
