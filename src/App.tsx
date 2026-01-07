@@ -10,6 +10,7 @@ import Industries from "./pages/Industries";
 import WhyUs from "./pages/WhyUs";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import DivisionProducts from "./pages/DivisionProducts";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +24,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
           <Route path="/products" element={<Products />} />
+      <Route path="/products/:divisionId" element={<DivisionProducts />} />
           <Route path="/industries" element={<Industries />} />
           <Route path="/why-us" element={<WhyUs />} />
           <Route path="/contact" element={<Contact />} />
