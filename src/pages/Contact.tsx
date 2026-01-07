@@ -16,7 +16,7 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email",
-    details: ["info@weldpro.com", "sales@weldpro.com"],
+    details: ["info@SumTech Engineering.com", "sales@SumTech Engineering.com"],
   },
   {
     icon: MapPin,
@@ -240,7 +240,7 @@ const Contact = () => {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="WeldPro Location"
+              title="SumTech Engineering Location"
             />
           </div>
         </div>

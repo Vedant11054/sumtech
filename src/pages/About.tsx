@@ -34,14 +34,14 @@ const About = () => {
         <div className="container-wide">
           <div className="max-w-4xl">
             <span className="text-accent font-semibold text-sm uppercase tracking-wider mb-4 block">
-              About WeldPro
+              About SumTech Engineering
             </span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold mb-6">
               Pioneering Excellence in{" "}
               <span className="text-accent">Welding Solutions</span>
             </h1>
             <p className="text-white/70 text-lg sm:text-xl leading-relaxed">
-              For over 25 years, WeldPro has been at the forefront of the welding industry, 
+              For over 25 years, SumTech Engineering has been at the forefront of the welding industry, 
               delivering innovative products and solutions that power critical industrial applications worldwide.
             </p>
           </div>
@@ -58,7 +58,7 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Founded in 1995, WeldPro began as a small family-owned business with a simple mission: 
+                  Founded in 1995, SumTech Engineering began as a small family-owned business with a simple mission: 
                   to provide industrial clients with welding products they could trust.
                 </p>
                 <p>
@@ -165,7 +165,7 @@ const About = () => {
             Ready to Partner With Us?
           </h2>
           <p className="text-white/70 text-lg mb-8 max-w-2xl mx-auto">
-            Discover how WeldPro can support your industrial welding needs with premium products and expert service.
+            Discover how SumTech Engineering can support your industrial welding needs with premium products and expert service.
           </p>
           <Button asChild size="lg" className="btn-accent">
             <Link to="/contact">
