@@ -1,0 +1,232 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap');
+
+@layer base {
+  :root {
+    /* Industrial color palette */
+    --background: 0 0% 100%;
+    --foreground: 220 20% 10%;
+
+    --card: 220 15% 97%;
+    --card-foreground: 220 20% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 10%;
+
+    /* Dark navy blue - primary brand color */
+    --primary: 220 60% 15%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Steel grey - secondary */
+    --secondary: 220 10% 85%;
+    --secondary-foreground: 220 20% 15%;
+
+    /* Muted steel */
+    --muted: 220 10% 94%;
+    --muted-foreground: 220 10% 40%;
+
+    /* Orange accent for CTAs */
+    --accent: 25 95% 53%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 15% 88%;
+    --input: 220 15% 88%;
+    --ring: 25 95% 53%;
+
+    --radius: 0.375rem;
+
+    /* Custom industrial tokens */
+    --navy-dark: 220 60% 10%;
+    --navy-medium: 220 55% 20%;
+    --steel-light: 220 10% 96%;
+    --steel-medium: 220 10% 70%;
+    --orange-vibrant: 25 95% 53%;
+    --orange-hover: 25 95% 45%;
+    --yellow-accent: 45 95% 55%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(220 60% 12%) 0%, hsl(220 55% 22%) 100%);
+    --gradient-cta: linear-gradient(135deg, hsl(25 95% 53%) 0%, hsl(35 95% 50%) 100%);
+    --gradient-steel: linear-gradient(180deg, hsl(220 10% 96%) 0%, hsl(220 10% 92%) 100%);
+
+    /* Shadows */
+    --shadow-card: 0 4px 20px -2px hsl(220 60% 10% / 0.08);
+    --shadow-card-hover: 0 12px 40px -8px hsl(220 60% 10% / 0.15);
+    --shadow-cta: 0 8px 24px -4px hsl(25 95% 53% / 0.4);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 220 60% 8%;
+    --foreground: 0 0% 98%;
+
+    --card: 220 55% 12%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 220 55% 12%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 25 95% 53%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 40% 20%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 220 40% 18%;
+    --muted-foreground: 220 10% 65%;
+
+    --accent: 25 95% 53%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 40% 20%;
+    --input: 220 40% 20%;
+    --ring: 25 95% 53%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold tracking-tight;
+  }
+}
+
+@layer components {
+  .container-wide {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+
+  .text-gradient-accent {
+    @apply bg-gradient-to-r from-accent to-yellow-accent bg-clip-text text-transparent;
+  }
+
+  .card-industrial {
+    @apply bg-card rounded-lg border border-border transition-all duration-300;
+    box-shadow: var(--shadow-card);
+  }
+
+  .card-industrial:hover {
+    box-shadow: var(--shadow-card-hover);
+    @apply -translate-y-1;
+  }
+
+  .btn-accent {
+    @apply inline-flex items-center justify-center px-6 py-3 font-semibold text-accent-foreground rounded-md transition-all duration-200;
+    background: var(--gradient-cta);
+    box-shadow: var(--shadow-cta);
+  }
+
+  .btn-accent:hover {
+    @apply scale-105;
+    filter: brightness(1.1);
+  }
+
+  .btn-outline-light {
+    @apply inline-flex items-center justify-center px-6 py-3 font-semibold border-2 border-white/30 text-white rounded-md transition-all duration-200 hover:bg-white/10 hover:border-white/50;
+  }
+
+  .section-dark {
+    background: var(--gradient-hero);
+    @apply text-white;
+  }
+
+  .section-steel {
+    background: var(--gradient-steel);
+  }
+
+  .nav-link {
+    @apply relative text-sm font-medium text-foreground/80 hover:text-foreground transition-colors duration-200;
+  }
+
+  .nav-link::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-accent transition-all duration-300;
+  }
+
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+}
+
+@layer utilities {
+  .animate-fade-up {
+    animation: fadeUp 0.6s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.4s ease-out forwards;
+  }
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .delay-100 { animation-delay: 100ms; }
+  .delay-200 { animation-delay: 200ms; }
+  .delay-300 { animation-delay: 300ms; }
+  .delay-400 { animation-delay: 400ms; }
+}
