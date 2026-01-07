@@ -1,78 +1,125 @@
-export const productsByDivision = {
-  "Welding & Cutting Products": [
+export const productsByDivision: Record<string, string[]> = {
+  "welding-cutting": [
     "SAW Wire",
     "SS TIG Wire",
     "SS MIG Wire",
     "MS Welding Electrodes",
+    "SS Welding Electrodes",
     "Hardfacing Electrodes",
     "Flux Cored Wire",
+    "Copper Coated MS Wire",
+    "Aluminum Alloy Electrodes",
+    "Fabrication Electrodes",
     "Welding Machines",
+    "Wire Feeder Machines",
     "Plasma Cutting Machines",
-    "Gas Cutting Torch",
-    "Welding Helmets",
+    "Gas Cutting Torches",
+    "Electrode Holders",
+    "Ground Clamps",
     "Welding Cables",
+    "Welding Helmets",
     "Anti Spatter Spray",
     "Super Prime Cut System"
   ],
 
-  "Wear Plate & Wear Solutions": [
+  "wear-plate": [
     "Chromium Carbide Wear Plates",
     "Composite Wear Plates",
     "Mill Liners",
     "Inlet Chutes",
-    "Ceramic Pipes & Bends",
+    "Ceramic Pipes",
+    "Ceramic Bends",
     "Ceramic Tiles",
-    "Metallic / Ceramic / Rubber Liners"
+    "Metallic Liners",
+    "Rubber Liners"
   ],
 
-  "Coating Products": [
+  "coating": [
     "Thermal Spray Coating",
-    "Epoxy Coating",
-    "Grit Blasting Set",
-    "NDT Services",
-    "Chemical Resistant Coating"
+    "Epoxy Coatings",
+    "Chemical Resistant Coatings",
+    "Surface Repair Systems",
+    "Grit Blasting Sets",
+    "NDT Services"
   ],
 
-  "Instrumentation Products": [
+  "instrumentation-automation": [
     "Rotary Paddle Level Switch",
     "Vibrating Fork Level Switch",
     "Capacitance Level Switch",
     "Radar Level Sensors",
+    "Electromechanical Level Transmitters",
     "Pressure Gauges",
-    "Vacuum Transmitters",
+    "Pressure Switches",
+    "Vacuum Gauges",
     "Flow Meters",
-    "RTD & Thermocouples"
+    "Flow Sensors",
+    "RTD & Thermocouple Sensors"
   ],
 
-  "Rubber & Oil Seals": [
+  "rubber-polymer": [
     "Rubber Sheets",
-    "O Rings",
+    "Rubber Expansion Joints",
+    "O-Rings",
     "Oil Seals",
     "Rubber Gaskets",
-    "Rubber Hoses",
-    "Expansion Bellows",
+    "Industrial Hoses",
+    "Silicone Hoses",
+    "SS Braided Hoses",
     "Conveyor Belts",
-    "Impact Pads"
+    "Elevator Belts",
+    "Impact Pads",
+    "Ceramic Pulley Lagging"
   ],
 
-  "Lubrication Products": [
+  "lubrication": [
     "Compressor Oil",
+    "Turbine Oil",
     "Hydraulic Oil",
     "Industrial Lubricants",
-    "Synthetic Grease",
-    "Wire Rope Lubricant",
-    "Grease Gun"
+    "Synthetic Lubricants",
+    "High Temperature Grease",
+    "Water Resistant Grease",
+    "Wire Rope Lubricants",
+    "Grease Guns"
   ],
 
-  "Fire & Safety Products": [
+  "fire-safety": [
     "Fire Fighting Suits",
-    "Aluminized Gloves",
-    "Fire Blanket",
-    "Arc Flash Suit",
+    "Aluminized Proximity Suits",
+    "Fire Blankets",
+    "Welding Blankets",
+    "Arc Flash Suits",
     "Fire Hose",
+    "Fire Hose Reel",
     "Sprinklers",
     "Fire Detectors",
     "Safety Gloves",
-    "Fall Arrestor"
+    "Face Shields",
+    "Fall Arrestors"
+  ],
+
+  "water-treatment": [
+    "Industrial Water Treatment Systems",
+    "Chemical Dosing Systems",
+    "Water Pumps",
+    "Valves",
+    "Utility Water Solutions"
+  ],
+
+  "pumps-valves": [
+    "Industrial Pumps",
+    "Process Valves",
+    "Flow Control Valves",
+    "Mechanical Couplings",
+    "Replacement Spares"
+  ],
+
+  "solar-ev": [
+    "Solar Panels",
+    "Solar Inverters",
+    "Solar Accessories",
+    "EV Electrical Spares",
+    "Energy Storage Components"
   ]
 };
