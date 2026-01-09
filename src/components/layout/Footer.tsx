@@ -81,20 +81,20 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
                 <span className="text-white/70 text-sm">
-                  123 Industrial Park Drive<br />
-                  Houston, TX 77001
+                  102 shri krishna apartment 28 near sanse layout,prabhu nagar,<br />
+                  nagpur, Maharashtra-440036
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-accent flex-shrink-0" />
-                <a href="tel:+1234567890" className="text-white/70 hover:text-accent transition-colors text-sm">
-                  +1 (234) 567-890
+                <a href="tel:+91 8263990352 " className="text-white/70 hover:text-accent transition-colors text-sm">
+                  +91 8263990352
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-accent flex-shrink-0" />
-                <a href="mailto:info@SumTech Engineering.com" className="text-white/70 hover:text-accent transition-colors text-sm">
-                  info@SumTech Engineering.com
+                <a href="mailto:sumtechsales@gmail.com" className="text-white/70 hover:text-accent transition-colors text-sm">
+                  sumtechsales@gmail.com
                 </a>
               </li>
             </ul>
