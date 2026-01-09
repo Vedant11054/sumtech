@@ -25,7 +25,7 @@ export const productMenu = {
     ],
   },
 
-  "Instrumentation & Automation": {
+  "Coating Products": {
     "Level Measurement": [
       "Rotary Paddle Switch",
       "Vibrating Fork Switch",
@@ -36,7 +36,7 @@ export const productMenu = {
     ],
   },
 
-  "Fire & Safety Products": {
+  "Instrumentation products": {
     "PPE": [
       "Fire Suits",
       "Safety Gloves",
@@ -47,4 +47,8 @@ export const productMenu = {
       "Sprinklers",
     ],
   },
+
+"Rubber & oil seals": {
+},
+
 };
