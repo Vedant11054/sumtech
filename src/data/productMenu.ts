@@ -49,6 +49,58 @@ export const productMenu = {
   },
 
 "Rubber & oil seals": {
+  "PPE": [
+    ],
 },
 
+"Power Tools": {
+  "PPE": [
+    ],
+},
+
+"Lubrication Products": {
+  "PPE": [
+    ],
+},
+
+"Fire & Safety Products": {
+  "PPE": [
+    ],
+},
+
+"Water Treatment Solutions": {
+  "PPE": [
+    ],
+},
+
+"Valves, Pumps & Couplings": {
+  "PPE": [
+    ],
+},
+
+"Solar & EV Spares": {  
+  "PPE": [
+    ],
+},
+
+"Replacement Parts": {
+  "PPE": [
+    ],
+},
+
+"Automation products": {
+  "PPE": [
+    ],
+},
+
+"building solutions": {
+  "PPE": [
+    ],
+},
+
+"Insurance (life & health)":{
+  "PPE": [
+    ],
+
+},
 };
