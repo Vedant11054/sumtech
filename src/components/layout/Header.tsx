@@ -78,11 +78,11 @@ export function Header() {
           {/* Desktop CTA */}
           <div className="hidden lg:flex items-center gap-4">
             <a
-              href="tel:+1234567890"
+              href="tel:+8263990352"
               className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
               <Phone className="w-4 h-4" />
-              8856813968
+              8263990352
             </a>
             <Button asChild className="btn-accent">
               <Link to="/contact">Get Quote</Link>
@@ -121,6 +121,7 @@ export function Header() {
                   {item.name === "Products"
                     ? "Product & Services"
                     : item.name}
+                    
                 </Link>
               ))}
 

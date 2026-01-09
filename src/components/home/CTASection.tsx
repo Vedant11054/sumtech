@@ -23,8 +23,8 @@ export function CTASection() {
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="btn-outline-light text-base">
-              <a href="tel:+1234567890">
+            <Button asChild size="lg" className="btn-accent text-base">
+              <a href="tel:+91 8263990352">
                 <Phone className="mr-2 w-5 h-5" />
                 Call Us Now
               </a>

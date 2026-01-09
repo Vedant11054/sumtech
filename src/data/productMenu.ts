@@ -25,7 +25,7 @@ export const productMenu = {
     ],
   },
 
-  "Instrumentation & Automation": {
+  "Coating Products": {
     "Level Measurement": [
       "Rotary Paddle Switch",
       "Vibrating Fork Switch",
@@ -36,7 +36,7 @@ export const productMenu = {
     ],
   },
 
-  "Fire & Safety Products": {
+  "Instrumentation products": {
     "PPE": [
       "Fire Suits",
       "Safety Gloves",
@@ -47,4 +47,60 @@ export const productMenu = {
       "Sprinklers",
     ],
   },
+
+"Rubber & oil seals": {
+  "PPE": [
+    ],
+},
+
+"Power Tools": {
+  "PPE": [
+    ],
+},
+
+"Lubrication Products": {
+  "PPE": [
+    ],
+},
+
+"Fire & Safety Products": {
+  "PPE": [
+    ],
+},
+
+"Water Treatment Solutions": {
+  "PPE": [
+    ],
+},
+
+"Valves, Pumps & Couplings": {
+  "PPE": [
+    ],
+},
+
+"Solar & EV Spares": {  
+  "PPE": [
+    ],
+},
+
+"Replacement Parts": {
+  "PPE": [
+    ],
+},
+
+"Automation products": {
+  "PPE": [
+    ],
+},
+
+"building solutions": {
+  "PPE": [
+    ],
+},
+
+"Insurance (life & health)":{
+  "PPE": [
+    ],
+
+},
 };
