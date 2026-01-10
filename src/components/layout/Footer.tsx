@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin } from "lucide-react";
-
+import logo from "../../assets/logo.png";
 const navigation = {
   products: [
     { name: "Welding Electrodes", href: "/products" },
@@ -24,9 +24,11 @@ export function Footer() {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center gap-2 mb-6">
-              <div className="w-10 h-10 bg-accent rounded-md flex items-center justify-center">
-                <span className="text-accent-foreground font-display font-bold text-xl">W</span>
-              </div>
+             <img
+  src={logo}
+  alt="SumTech Engineering Logo"
+  className="w-10 h-10 object-contain"
+/>
               <div>
                 <span className="font-display font-bold text-xl">SumTech Engineering</span>
                 <span className="block text-xs text-white/60 -mt-1">Industrial Solutions</span>
