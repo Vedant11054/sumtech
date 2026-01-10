@@ -233,7 +233,7 @@ const Contact = () => {
           </div>
           <div className="aspect-[16/6] rounded-2xl overflow-hidden card-industrial">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d443088.69855914!2d-95.8008153!3d29.7604267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640b8b4488d8501%3A0xca0d02def365053b!2sHouston%2C%20TX%2C%20USA!5e0!3m2!1sen!2s!4v1704067200000!5m2!1sen!2s"
+              src="https://www.google.com/maps?q=Shrikrishna+Apartment,+32,+Amravati+Rd,+Hindustan+Colony,+Ram+Nagar,+Nagpur,+Maharashtra+440033,+India&output=embed"
               width="100%"
               height="100%"
               style={{ border: 0 }}
