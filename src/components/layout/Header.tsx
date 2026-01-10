@@ -4,6 +4,7 @@ import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 // import { ProductMegaMenu } from "@/components/navbar/ProductMegaMenu";
 import { ProductMegaMenu } from "@/navbar/ProductMegaMenu";
+import logo from "@/assets/logo.png";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -26,12 +27,13 @@ export function Header() {
           
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-accent rounded-md flex items-center justify-center">
-              <span className="text-accent-foreground font-display font-bold text-xl">
-                W
-              </span>
-            </div>
-            <div className="hidden sm:block">
+            <img
+  src={logo}
+  alt="SumTech Engineering Logo"
+  className="w-10 h-10 object-contain"
+/>
+
+            <div className="block">
               <span className="font-display font-bold text-xl text-foreground">
                 SumTech Engineering
               </span>
