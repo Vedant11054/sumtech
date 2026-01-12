@@ -11,12 +11,12 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    details: ["+1 (234) 567-890", "+1 (234) 567-891"],
+    details: ["+91 8263990352", "+91 8263990352"],
   },
   {
     icon: Mail,
     title: "Email",
-    details: ["info@SumTech Engineering.com", "sales@SumTech Engineering.com"],
+    details: ["sumtechsales@gmail.com", "sumtechsales@gmail.com"],
   },
   {
     icon: MapPin,
@@ -148,7 +148,7 @@ const Contact = () => {
                         type="tel"
                         value={formData.phone}
                         onChange={handleChange}
-                        placeholder="+1 (234) 567-890"
+                        placeholder="+91 8263990352"
                       />
                     </div>
                   </div>
