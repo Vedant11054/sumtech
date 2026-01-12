@@ -21,7 +21,7 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Address",
-    details: ["123 Industrial Park Drive", "Houston, TX 77001, USA"],
+    details: ["102 shri krishna apartment 28 near sanse layout,prabhu nagar,nagpur, Maharashtra-440036"],
   },
   {
     icon: Clock,
