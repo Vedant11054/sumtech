@@ -54,20 +54,29 @@ const DivisionProducts = () => {
         <div className="container-wide grid sm:grid-cols-2 md:grid-cols-3 gap-6">
           {products.map((product) => (
             <div
-              key={product}
-              className="border rounded-xl p-5 hover:shadow-md transition"
+              key={product.name}
+              className="border rounded-xl overflow-hidden hover:shadow-lg transition group"
             >
-              <h3 className="font-semibold mb-2">{product}</h3>
-              <p className="text-sm text-muted-foreground">
-                Industrial grade product for heavy-duty applications.
-              </p>
-              <Link
-                to="/contact"
-                className="inline-flex items-center text-accent text-sm mt-4"
-              >
-                Enquire
-                <ArrowRight className="ml-1 w-4 h-4" />
-              </Link>
+              <div className="aspect-[4/3] overflow-hidden bg-muted">
+                <img
+                  src={product.image}
+                  alt={product.name}
+                  className="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+                />
+              </div>
+              <div className="p-5">
+                <h3 className="font-semibold mb-2">{product.name}</h3>
+                <p className="text-sm text-muted-foreground">
+                  Industrial grade product for heavy-duty applications.
+                </p>
+                <Link
+                  to="/contact"
+                  className="inline-flex items-center text-accent text-sm mt-4 hover:gap-2 transition-all"
+                >
+                  Enquire
+                  <ArrowRight className="ml-1 w-4 h-4" />
+                </Link>
+              </div>
             </div>
           ))}
         </div>
