@@ -11,17 +11,17 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    details: ["+1 (234) 567-890", "+1 (234) 567-891"],
+    details: ["+91 8263990352", "+91 8263990352"],
   },
   {
     icon: Mail,
     title: "Email",
-    details: ["info@SumTech Engineering.com", "sales@SumTech Engineering.com"],
+    details: ["sumtechsales@gmail.com", "sumtechsales@gmail.com"],
   },
   {
     icon: MapPin,
     title: "Address",
-    details: ["123 Industrial Park Drive", "Houston, TX 77001, USA"],
+    details: ["102 shri krishna apartment 28 near sanse layout,prabhu nagar,nagpur, Maharashtra-440036"],
   },
   {
     icon: Clock,
@@ -148,7 +148,7 @@ const Contact = () => {
                         type="tel"
                         value={formData.phone}
                         onChange={handleChange}
-                        placeholder="+1 (234) 567-890"
+                        placeholder="+91 8263990352"
                       />
                     </div>
                   </div>

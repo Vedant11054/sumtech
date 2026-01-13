@@ -53,13 +53,14 @@ export function Header() {
                   onMouseEnter={() => setProductMenuOpen(true)}
                   onMouseLeave={() => setProductMenuOpen(false)}
                 >
-                  <span
-                    className={`nav-link cursor-pointer ${
-                      productMenuOpen ? "text-accent" : ""
+                  <Link
+                    to={item.href}
+                    className={`nav-link ${
+                      productMenuOpen || location.pathname === item.href ? "text-accent" : ""
                     }`}
                   >
                     Product & Services
-                  </span>
+                  </Link>
 
                   {productMenuOpen && <ProductMegaMenu />}
                 </div>
@@ -80,7 +81,7 @@ export function Header() {
           {/* Desktop CTA */}
           <div className="hidden lg:flex items-center gap-4">
             <a
-              href="tel:+8263990352"
+              href="tel:+91 8263990352"
               className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
               <Phone className="w-4 h-4" />
