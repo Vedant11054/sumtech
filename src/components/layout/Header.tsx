@@ -53,13 +53,14 @@ export function Header() {
                   onMouseEnter={() => setProductMenuOpen(true)}
                   onMouseLeave={() => setProductMenuOpen(false)}
                 >
-                  <span
-                    className={`nav-link cursor-pointer ${
-                      productMenuOpen ? "text-accent" : ""
+                  <Link
+                    to={item.href}
+                    className={`nav-link ${
+                      productMenuOpen || location.pathname === item.href ? "text-accent" : ""
                     }`}
                   >
                     Product & Services
-                  </span>
+                  </Link>
 
                   {productMenuOpen && <ProductMegaMenu />}
                 </div>
