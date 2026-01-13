@@ -4,6 +4,7 @@ import { ProductsPreview } from "@/components/home/ProductsPreview";
 import { IndustriesSection } from "@/components/home/IndustriesSection";
 import { WhyChooseUs } from "@/components/home/WhyChooseUs";
 import { CertificationsSection } from "@/components/home/CertificationsSection";
+import { PartnersSection } from "@/components/home/PartnersSection";
 import { CTASection } from "@/components/home/CTASection";
 
 const Index = () => {
@@ -14,6 +15,7 @@ const Index = () => {
       <IndustriesSection />
       <WhyChooseUs />
       <CertificationsSection />
+      <PartnersSection />
       <CTASection />
     </Layout>
   );
