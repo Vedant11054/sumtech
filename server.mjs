@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3001;
 
 // Middleware
 app.use(cors({
-  origin: process.env.FRONTEND_URL || "http://localhost:5173",
+  origin: ["http://localhost:5173", "http://localhost:8080", "http://localhost:3000"],
 }));
 app.use(express.json());
 
@@ -28,8 +28,11 @@ app.post("/api/send-email", async (req, res) => {
   try {
     const { to, name, email, company, phone, subject, message } = req.body;
 
+    console.log("📬 New email request:", { name, email, subject });
+
     // Validate input
     if (!name || !email || !subject || !message) {
+      console.error("❌ Missing required fields:", { name, email, subject, message });
       return res.status(400).json({
         success: false,
         message: "Missing required fields",
@@ -58,7 +61,7 @@ app.post("/api/send-email", async (req, res) => {
     `;
 
     // Send email
-    await transporter.sendMail({
+    const info = await transporter.sendMail({
       from: process.env.EMAIL_USER || "vedantghubade04@gmail.com",
       to: to || "vedantghubade04@gmail.com",
       replyTo: email,
@@ -66,12 +69,14 @@ app.post("/api/send-email", async (req, res) => {
       html: htmlContent,
     });
 
+    console.log("✅ Email sent successfully:", info.messageId);
+
     return res.status(200).json({
       success: true,
       message: "Email sent successfully",
     });
   } catch (error) {
-    console.error("Error sending email:", error);
+    console.error("❌ Error sending email:", error);
     return res.status(500).json({
       success: false,
       message: "Failed to send email",

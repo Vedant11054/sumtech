@@ -11,12 +11,12 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    details: ["+91 8263990352", "+91 8263990352"],
+    details: ["+91 8263990352"],
   },
   {
     icon: Mail,
     title: "Email",
-    details: ["vedantghubade04@gmail.com", "vedantghubade04@gmail.com"],
+    details: ["vedantghubade04@gmail.com"],
   },
   {
     icon: MapPin,
@@ -55,7 +55,7 @@ const Contact = () => {
 
     try {
       // Send email via backend
-      const response = await fetch("/api/send-email", {
+      const response = await fetch("http://localhost:3001/api/send-email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -71,7 +71,9 @@ const Contact = () => {
         }),
       });
 
-      if (response.ok) {
+      const data = await response.json();
+
+      if (response.ok && data.success) {
         toast({
           title: "Message Sent!",
           description: "Thank you for contacting us. We'll get back to you within 24 hours.",
@@ -88,7 +90,7 @@ const Contact = () => {
       } else {
         toast({
           title: "Error",
-          description: "Failed to send message. Please try again.",
+          description: data.message || "Failed to send message. Please try again.",
           variant: "destructive",
         });
       }
@@ -96,7 +98,7 @@ const Contact = () => {
       console.error("Error sending email:", error);
       toast({
         title: "Error",
-        description: "Failed to send message. Please try again.",
+        description: "Failed to send message. Please make sure the server is running on port 3001.",
         variant: "destructive",
       });
     } finally {
