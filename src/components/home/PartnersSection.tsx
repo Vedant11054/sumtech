@@ -1,6 +1,13 @@
+import { useState } from "react";
 import { partners } from "@/data/partners";
 
 export function PartnersSection() {
+  const [imageErrors, setImageErrors] = useState<Set<string>>(new Set());
+
+  const handleImageError = (partnerId: string) => {
+    setImageErrors((prev) => new Set(prev).add(partnerId));
+  };
+
   return (
     <section className="section-steel section-padding">
       <div className="container-wide">
@@ -26,11 +33,19 @@ export function PartnersSection() {
               className="card-industrial p-8 flex flex-col items-center justify-center text-center hover:shadow-lg transition duration-300"
             >
               <div className="w-full h-24 mb-6 flex items-center justify-center bg-white/5 rounded-xl overflow-hidden">
-                <img
-                  src={partner.logo}
-                  alt={partner.name}
-                  className="w-full h-full object-cover"
-                />
+                {!imageErrors.has(partner.id) ? (
+                  <img
+                    src={partner.logo}
+                    alt={partner.name}
+                    className="w-auto h-full max-w-[90%] object-contain"
+                    onError={() => handleImageError(partner.id)}
+                    loading="lazy"
+                  />
+                ) : (
+                  <div className="flex items-center justify-center w-full h-full bg-gradient-to-r from-accent/20 to-accent/10">
+                    <span className="text-sm font-semibold text-accent">{partner.name}</span>
+                  </div>
+                )}
               </div>
               <h3 className="text-xl font-display font-bold text-foreground mb-2">
                 {partner.name}
