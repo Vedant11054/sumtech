@@ -15,7 +15,7 @@ export const divisions = [
     title: "Welding & Cutting Products",
     description:
       "Comprehensive range of welding electrodes, wires, machines, and accessories for repair, maintenance, and fabrication across heavy industries.",
-    image: weldingImg,
+    image: "/product images/welding product/Welding Machines.jpg",
     highlights: [
       "Mild Steel & Low Hydrogen Electrodes",
       "SS / MIG / TIG / SAW Wires",
@@ -28,7 +28,7 @@ export const divisions = [
     title: "Wear Plate & Wear Solutions",
     description:
       "Advanced wear protection solutions including chromium carbide plates, ceramic liners, and composite wear systems for high-abrasion environments.",
-    image: wearplateImg,
+    image: "/product images/WEAR PROTECTION DIVISION/Mill Liners.jpg",
     highlights: [
       "Chromium Carbide Wear Plates",
       "Ceramic Liners & Tiles",
@@ -41,7 +41,7 @@ export const divisions = [
     title: "Coating Products",
     description:
       "Industrial coating and surface protection solutions including thermal spray, epoxy coatings, and repair systems for corrosion and wear resistance.",
-    image: coatingImg,
+    image: "/product images/welding product/Electrode Drying Oven.jpg",
     highlights: [
       "Thermal Spray Coatings",
       "Epoxy & Chemical Resistant Coatings",
@@ -54,7 +54,7 @@ export const divisions = [
     title: "Instrumentation & Automation",
     description:
       "Precision instrumentation and automation products for level, flow, pressure, and process control.",
-    image: automationImg,
+    image: "/product images/AUTOMATION DIVISION/Flow Meters for Liquid.jpg",
     highlights: [
       "Level Switches & Transmitters",
       "Flow Meters & Sensors",
@@ -67,7 +67,7 @@ export const divisions = [
     title: "Rubber & Polymer Products",
     description:
       "High-performance rubber products engineered for sealing, conveying, and insulation.",
-    image: rubberImg,
+    image: "/product images/RUBBER DIVISION/RUBBER SHEETS.jpg",
     highlights: [
       "Rubber Sheets & Expansion Joints",
       "O-Rings & Oil Seals",
@@ -80,7 +80,7 @@ export const divisions = [
     title: "Lubrication Products",
     description:
       "Premium industrial lubricants designed to extend equipment life and reduce downtime.",
-    image: lubricationImg,
+    image: "/product images/LUBRICATION DIVISION/Lubricants.jpg",
     highlights: [
       "Compressor & Turbine Oils",
       "Hydraulic Oils",
@@ -93,7 +93,7 @@ export const divisions = [
     title: "Fire & Safety Products",
     description:
       "Complete range of PPE and fire safety solutions for hazardous environments.",
-    image: safetyImg,
+    image: "/product images/FIRE & SAFETY DIVISION/Fire Fighting Suit.png",
     highlights: [
       "Fire Fighting Suits & Gloves",
       "Fire Detection & Alarm Systems",
@@ -106,7 +106,7 @@ export const divisions = [
     title: "Water Treatment Solutions",
     description:
       "Efficient water treatment and management solutions for industrial applications.",
-    image: waterImg,
+    image: "/product images/AUTOMATION DIVISION/Flow Meters for Liquid.jpg",
     highlights: [
       "Industrial Water Treatment",
       "Chemical Dosing Systems",
@@ -119,7 +119,7 @@ export const divisions = [
     title: "Valves, Pumps & Couplings",
     description:
       "Reliable flow control and mechanical power transmission solutions.",
-    image: pumpImg,
+    image: "/product images/AUTOMATION DIVISION/Flow Transmitters for Liquid.jpg",
     highlights: [
       "Industrial Pumps",
       "Valves & Flow Control",
@@ -132,7 +132,7 @@ export const divisions = [
     title: "Solar & EV Spares",
     description:
       "Sustainable energy solutions including solar components and EV spares.",
-    image: solarImg,
+    image: "/product images/welding product/Electrode Drying Oven.jpg",
     highlights: [
       "Solar Power Components",
       "EV Electrical Spares",

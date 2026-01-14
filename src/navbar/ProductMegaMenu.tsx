@@ -14,7 +14,7 @@ divisions.forEach((division) => {
 function getAllProductsForDivision(division: string): string[] {
   const categories = productMenu[division];
   const allProducts: string[] = [];
-  Object.values(categories).forEach((products) => {
+  Object.values(categories).forEach((products: any) => {
     allProducts.push(...products);
   });
   return allProducts;

@@ -12,6 +12,7 @@ import {
   Award 
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { PartnersSection } from "@/components/home/PartnersSection";
 
 const mainFeatures = [
   {
@@ -169,6 +170,9 @@ const WhyUs = () => {
           </div>
         </div>
       </section>
+
+      {/* Partners Section */}
+      <PartnersSection />
 
       {/* CTA */}
       <section className="section-dark section-padding">
