@@ -30,26 +30,24 @@ export function PartnersSection() {
           {partners.map((partner) => (
             <div
               key={partner.id}
-              className="card-industrial p-8 flex flex-col items-center justify-center text-center hover:shadow-lg transition duration-300"
+              className="card-industrial p-8 flex flex-col items-center justify-center text-center hover:shadow-lg transition duration-300 h-full"
             >
-              <div className="w-full h-24 mb-6 flex items-center justify-center bg-white/5 rounded-xl overflow-hidden">
+              <div className="w-full h-32 mb-4 flex items-center justify-center bg-white/5 rounded-xl overflow-hidden">
                 {!imageErrors.has(partner.id) ? (
                   <img
                     src={partner.logo}
                     alt={partner.name}
+                    title={partner.name}
                     className="w-auto h-full max-w-[90%] object-contain"
                     onError={() => handleImageError(partner.id)}
                     loading="lazy"
                   />
                 ) : (
                   <div className="flex items-center justify-center w-full h-full bg-gradient-to-r from-accent/20 to-accent/10">
-                    <span className="text-sm font-semibold text-accent">{partner.name}</span>
+                    <span className="text-lg font-bold text-accent text-center px-2">{partner.name}</span>
                   </div>
                 )}
               </div>
-              <h3 className="text-xl font-display font-bold text-foreground mb-2">
-                {partner.name}
-              </h3>
               <p className="text-sm text-accent font-medium">
                 {partner.category}
               </p>
