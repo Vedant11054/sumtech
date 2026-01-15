@@ -98,7 +98,7 @@ For production deployment (Vercel, Railway, etc.):
 **CORS errors:**
 - Update FRONTEND_URL in .env to match your frontend domain
 - Check CORS configuration in server/index.ts
-
+..
 **Connection timeout:**
 - Verify internet connection
 - Check if Gmail SMTP server (smtp.gmail.com:587) is accessible
